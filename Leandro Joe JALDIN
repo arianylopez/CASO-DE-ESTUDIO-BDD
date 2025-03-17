@@ -1,0 +1,6 @@
+--Creacion de los indices
+CREATE INDEX idx_DetalleVenta_PedidoID ON DetalleVenta(PedidoID);
+--Razon: La tabla DetalleVenta puede tener muchos productos para un solo pedido 
+
+CREATE INDEX idx_Pagos_PedidoID ON Pagos(PedidoID);
+--Razon: La tabla pagos almacena los pagos de cada pedido 
