@@ -698,7 +698,7 @@ VALUES
 (183, 'Completado', 420.00),
 (184, 'Pendiente', 135.00),
 (185, 'Completado', 99.00);
--- Agregar más pedidos (50 pedidos adicionales)
+-- (50 pedidos adicionales)
 INSERT INTO Pedidos (ClienteID, Estado, Total) 
 VALUES 
 (186, 'Pendiente', 300.00),
@@ -942,7 +942,7 @@ VALUES
 (178, 183, 1, 1200.00), -- Consola en el pedido 178
 (179, 183, 1, 1200.00), -- Teclado en el pedido 179
 (180, 183, 1, 1200.00);
--- Agregar más detalles de venta (50 detalles adicionales)
+-- (50 detalles adicionales)
 INSERT INTO DetalleVenta (PedidoID, ProductoID, Cantidad, PrecioUnitario) 
 VALUES 
 (186, 101, 1, 120.00),
@@ -1181,7 +1181,7 @@ VALUES
 (179, 1200.00, 'Transferencia'), -- Pago del pedido 179
 (180, 1200.00, 'Efectivo'); -- Pago del pedido 180
 SELECT * FROM Pagos
--- Agregar pagos para los pedidos 181 a 185
+
 INSERT INTO Pagos (PedidoID, Monto, MetodoPago) 
 VALUES 
 (181, 450.00, 'Tarjeta'), -- Pago del pedido 181
@@ -1189,7 +1189,7 @@ VALUES
 (183, 280.00, 'Efectivo'), -- Pago del pedido 183
 (184, 600.00, 'Tarjeta'), -- Pago del pedido 184
 (185, 150.00, 'Transferencia'), -- Pago del pedido 185
--- Agregar más pagos (50 pagos adicionales)
+-- (50 pagos adicionales)
 (186, 620.00, 'Tarjeta'),
 (187, 800.00, 'Transferencia'),
 (188, 180.00, 'Efectivo'),
